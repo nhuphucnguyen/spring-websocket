@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="'Welcome to Spring with Websocket'">Title</title>
+    <script src="/index.js"></script>
+</head>
+<body>
+    <h1>Header</h1>
+    <p>Content goes here...</p>
+    <div>
+        <input type="text" id="topic" placeholder="Enter a topic to subscribe to">
+        <button onclick="subscribeTopic()">Subscribe</button>
+    </div>
+    <div>
+        <input type="text" id="messageInput" placeholder="Enter your message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</body>
+</html>
