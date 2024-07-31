@@ -2,7 +2,6 @@ package dev.phucngu.springwebsocket.hello;
 
 import dev.phucngu.springwebsocket.config.WebSocketConfig;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,11 +13,6 @@ public class HelloController {
 
     public HelloController(WebSocketConfig.SimpleWebSocketHandler simpleWebSocketHandler) {
         this.simpleWebSocketHandler = simpleWebSocketHandler;
-    }
-
-    @GetMapping("")
-    public String hello() {
-        return "index";
     }
 
     @PostMapping("/broadcast/")
