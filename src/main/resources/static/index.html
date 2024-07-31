@@ -2,14 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Spring with Websocket</title>
-    <script src="/index.js"></script>
+<!--    <script src="/index.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+    <script src="withstomp.js"></script>
 </head>
 <body>
     <h1>Header</h1>
     <p>Content goes here...</p>
     <div>
-        <input type="text" id="topic" placeholder="Enter a topic to subscribe to">
-        <button onclick="subscribeTopic()">Subscribe</button>
+        <button onclick="connect()">Connect</button>
+        <button onclick="disconnect()">Disconnect</button>
     </div>
     <div>
         <input type="text" id="messageInput" placeholder="Enter your message">
